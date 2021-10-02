@@ -20,6 +20,23 @@ body {
     width: 100vw;
 }
 
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #161616;
+    bottom: 0;
+    margin-top: 290px;
+    right: 50px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+
 .main-info-section,
 .works,
 nav ul {
@@ -168,7 +185,7 @@ span.m-left {
     color: #ed5565;
     letter-spacing: 2px;
     position: relative;
-    top: 80px;
+    top: 50px;
     overflow: hidden;
     transition: 0.5s;
     display: inline-block;
@@ -193,8 +210,11 @@ span.m-left {
 }
 
 .profile-image img {
-    width: 450px;
-    margin-top: 20px;
+    width: 350px;
+    height: 390px;
+    margin-top: 30px;
+    /* border: 1px solid white; */
+    border-radius: 100%;
 }
 
 .about {
@@ -343,6 +363,7 @@ form textarea {
     margin: 20px 0;
     outline: none;
     font-size: 1.2rem;
+    resize: none;
     color: #fff;
     position: relative;
     left: 50%;
@@ -409,6 +430,8 @@ footer p {
 
     .main-info-section .profile-image img {
         width: 340px;
+        margin-top: 60px;
+        margin-bottom: 100px;
     }
 
     .skills {
@@ -499,6 +522,11 @@ footer p {
         text-align: center;
     }
 
+    .text .profile-image img{
+      padding-bottom: 100px;
+      text-align: center;
+    }
+
     .work h1 {
         font-size: 7rem;
     }
@@ -514,8 +542,8 @@ footer p {
     }
 
     .contact h1 {
-        font-size: 6rem;
-        margin-right: 7px;
+        font-size: 5rem;
+        margin-left: -60px;
     }
 
     .contact {
@@ -532,5 +560,10 @@ footer p {
 
     .contact form textarea {
         width: 300px;
+    }
+
+    .gotopbtn {
+        /* margin-right: -300px; */
+        z-index: 99999;
     }
 }
