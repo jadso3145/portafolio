@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="changeI">
 
     <head>
         <meta charset="UTF-8"/>
@@ -13,6 +13,9 @@
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"/>
+        <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet"/>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
         <title>Jared Portfolio</title>
         <link rel="shortcut icon" href="./img/logo_transparent.png">
     </head>
@@ -101,9 +104,10 @@
         <div class="container about" id="about">
             <h1>About</h1>
             <div class="about-me-info">
-                <p>Soy desarrollador web front-end especializado en tecnologías de vanguardia
-                    como React.js, JavaScript, Sass, Css entre otras. Apasionado por siempre
-                    aprender nuevas tegnologias y profundizar mas en las que ya he aprendido.
+                <p id="aboutMe">
+                    Soy desarrollador web front-end especializado en tecnologías de vanguardia como
+                    React.js, JavaScript, Sass, Css entre otras. Apasionado por siempre aprender
+                    nuevas tegnologias y profundizar mas en las que ya he aprendido.
                 </p>
             </div>
             <img src="img/dotted-shape.png" alt="">
@@ -111,8 +115,10 @@
 
         <div class="container skills" id="skills">
             <h1>Skills</h1>
-            <p class="skills-info">Estas son las tegnologias que domino y en las que espero
-              profundizar mas y compartir mi conocimiento.</p>
+            <p class="skills-info" id="skillsMe">
+                Estas son las tegnologias que domino y en las que espero profundizar mas y
+                compartir mi conocimiento
+            </p>
             <div class="images-skills">
                 <div class="image-skill">
                     <img src="img/icons8-javascript-96.png" alt="">
@@ -152,11 +158,38 @@
         <div class="container work" id="work">
             <h1>Work</h1>
             <div class="works">
-                <a href=""><img src="img/1.png" alt=""></a>
-                <a href="https://jadso3145.github.io/neumovies/" target="_blank"><img src="img/neumovies.png" alt=""></a>
-                <a href="https://jadso3145.github.io/e-commerce/#/" target="_blank"><img src="./img/e.commerce.png" alt=""></a>
-                <a href=""><img src="img/2.png" alt=""></a>
+                <a href=""><img
+                    src="img/Captura de pantalla de 2021-10-03 11-45-23.png"
+                    alt=""
+                    class="open1"
+                    id="probar"></a>
+                <a href="https://jadso3145.github.io/neumovies/#/" target="_blank"><img src="img/neumovies.png" alt="" class="open2" id="probar"></a>
+                <a href="https://jadso3145.github.io/e-commerce/#/" target="_blank"><img src="./img/e.commerce.png" alt="" class="open3" id="probar"></a>
             </div>
+
+            <!-- <button id="open">
+            Hacer Click
+        </button> -->
+
+            <div id="modal_container" class="modal-container">
+                <div class="modal">
+                    <h1 id="titulo"></h1>
+                    <p id="parrafo">
+                        este proyecto esta en produccion
+                    </p>
+                    <div class="video">
+                        <video
+                            id="my-video"
+                            class="video-js"
+                            controls
+                            preload="auto"
+                            width="640"
+                            height="264"><source src="./video/portafoliovideo.mp4" type="video/mp4"/></video>
+                    </div>
+                    <button id="close">Cerrar</button>
+                </div>
+            </div>
+
         </div>
 
         <div class="container contact" id="contactme">
@@ -179,8 +212,14 @@
         <!-- <script src="js/TimelineLite.min.js"></script> -->
         <!-- <script src="js/TweenMax.min.js"></script> -->
         <!-- <script src="js/CSSPlugin.min.js"></script> -->
-        <!--<script src="js/script.js"></script>-->
-        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+        <script src="js/script.js" type="module"></script>
+        <a class="gotopbtn" href="#">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>
